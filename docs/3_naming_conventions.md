@@ -2,19 +2,19 @@
 
 ## 3.1 通用命名规范
 
-| 3. 【must】类型的名称中所有单词的首字母必须大写。 |
-| :------------------------------------------------ |
-| <img src="figure\3.png" style="zoom:80%;" />      |
-| C++开发社区中的通用做法。                         |
+| 3. 【must】类型的名称中所有单词的首字母必须大写。            |
+| :----------------------------------------------------------- |
+| <img src="https://raw.githubusercontent.com/Guoning-Chen/Cpp-Programming-Style-Guideline/main/source/figure/3.png" style="zoom:40%;" /> |
+| C++开发社区中的通用做法。                                    |
 
 | 4. 【must】变量名中的第一个单词必须小写，其余大写。          |
 | :----------------------------------------------------------- |
-| <img src="figure\4.png" style="zoom:80%;" />                 |
+| <img src="https://raw.githubusercontent.com/Guoning-Chen/Cpp-Programming-Style-Guideline/main/source/figure/4.png" style="zoom:50%;" /> |
 | C++开发社区中的通用做法。使得变量区别于各种类的名称，有效解决如`Line line`这种声明中潜在的命名冲突。 |
 
 | 5. 【must】常量（包括枚举量）的名称中所有字母都必须大写，并用下划线分开。 |
 | :----------------------------------------------------------- |
-| <img src="figure\5-1.png" style="zoom:80%;" />               |
+| <img src="https://raw.githubusercontent.com/Guoning-Chen/Cpp-Programming-Style-Guideline/main/source/figure/5-1.png" style="zoom:60%;" /> |
 | C++开发社区中的通用做法。通常应该尽可能避免使用常量。在大部分情况下，用函数代替是更好的选择：<br><img src="figure\5-2.png" alt="image-20210703143643703" style="zoom:80%;" /> <br>这样既容易阅读，又能保证和<u>类的成员变量</u>统一接口。 |
 
 | 6. 【must】方法或函数的名称必须包含动词且首字母小写、其余大写。 |
