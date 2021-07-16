@@ -1,5 +1,5 @@
 .. Cpp-Programming-Style-Guideline documentation master file, created by
-   sphinx-quickstart on Fri Jul 16 17:07:36 2021.
+   sphinx-quickstart on Fri Jul 16 20:40:36 2021.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
@@ -9,9 +9,16 @@ Welcome to Cpp-Programming-Style-Guideline's documentation!
 .. toctree::
    :maxdepth: 2
    
-   pages/1_introduction.md
-   pages/2_general_recommendations.md
-   pages/3_naming_conventions.md
+   docs/translator_introduction.md
+   docs/translator_caution.md
+   docs/1_introduction.md
+   docs/2_general_recommendations.md
+   docs/3_naming_conventions.md
+   docs/4_files.md
+   docs/5_statements.md
+   docs/6_layout_comments.md
+   docs/7_reference.md
+   docs/translator_appendix.md
 
 
 Indices and tables

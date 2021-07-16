@@ -6,6 +6,8 @@
   - 修改了非局部变量、静态局部变量、通过引用传递的可变参数
   - 执行I/O操作
   - 调用其他会产生side effect的函数
-
 - **concept**（20, 47, 49）：根据[维基百科](https://en.wanweibaike.com/wiki-Concept%20(generic%20programming))，我的理解是：concept是指某个类可以执行的操作。
 - **constructs**（49, 57）：第49条谈到struct结构体和第57条谈到do-while循环时，都提到了construct这个单词，第49条是说class完全可以代替struct，第57条是说完全可以用while循环和for循环代替do-while，这两条建议都在强调：减少使用construct的数量有助于提高代码可读性。根据[维基百科](http://en.volupedia.org/wiki/Language_construct)对于**language construct**的解释，我认为可以把本文档中的construct理解为**代码的布局或结构**，当用C++来实现某种功能时，代码结构越单一、代码结构形式的种类越少，当然就越容易让别人看懂。
+
+
+
