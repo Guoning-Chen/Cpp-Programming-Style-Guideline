@@ -9,8 +9,9 @@ Welcome to Cpp-Programming-Style-Guideline's documentation!
 .. toctree::
    :maxdepth: 2
    
-   docs/*
-
+   pages/1_introduction.md
+   pages/2_general_recommendations.md
+   pages/3_naming_conventions.md
 
 
 Indices and tables
