@@ -9,7 +9,7 @@ Welcome to Cpp-Programming-Style-Guideline's documentation!
 .. toctree::
    :maxdepth: 2
    
-   3_naming_conventions.md
+   docs/*
 
 
 
