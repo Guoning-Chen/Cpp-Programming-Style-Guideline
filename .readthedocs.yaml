@@ -1,5 +1,15 @@
 version: 2
 
-mkdocs:
-  configuration: mkdocs.yml
-  fail_on_warning: false
+#mkdocs:
+#  configuration: mkdocs.yml
+#  fail_on_warning: false
+
+sphinx:
+  builder: html
+  configuration: conf.py
+  fail_on_warning: true
+
+python:
+  version: 3.7
+  install:
+    - requirements: docs/requirements.txt
