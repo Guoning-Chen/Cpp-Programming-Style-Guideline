@@ -1,0 +1,593 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>5 声明 &mdash; Cpp-Programming-Style-Guideline  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="6 布局和注释" href="6_layout_comments.html" />
+    <link rel="prev" title="4 文件" href="4_files.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Cpp-Programming-Style-Guideline
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="translator_introduction.html">内容简介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="translator_caution.html">注意事项</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1_introduction.html">1 简介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2_general_recommendations.html">2 整体建议</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3_naming_conventions.html">3 命名规范</a></li>
+<li class="toctree-l1"><a class="reference internal" href="4_files.html">4 文件</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">5 声明</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">5.1 类型</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">5.2 变量</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">5.3 循环</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">5.4 条件表达式</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id6">5.5 其他</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="6_layout_comments.html">6 布局和注释</a></li>
+<li class="toctree-l1"><a class="reference internal" href="7_reference.html">7 参考资料</a></li>
+<li class="toctree-l1"><a class="reference internal" href="translator_appendix.html">译者附录</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Cpp-Programming-Style-Guideline</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>5 声明</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/docs/5_statements.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>5 声明<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id2">
+<h2>5.1 类型<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>43. 【can】作用范围局限于某个文件内的变量类型可以在该文件内部声明。</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>无</td>
+</tr>
+<tr>
+<td>强制隐藏信息。</td>
+</tr>
+</tbody>
+</table><table border="1" class="docutils">
+<thead>
+<tr>
+<th>44. 【must】类中的内容必须以<code>public</code>、<code>protected</code>、<code>private</code>的顺序排列。所有部分必须明确划分。不能遗漏任何有效的内容。</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>无</td>
+</tr>
+<tr>
+<td>这样排序符合<u>"most public first"</u>的原则，如果某个程序员只是单纯为了使用这个类，当他看到<code>protected</code>或<code>private</code>部分时就可以停止阅读。</td>
+</tr>
+</tbody>
+</table><table border="1" class="docutils">
+<thead>
+<tr>
+<th>45. 【must】类型转换必须是显式的，永远不要依赖隐式类型转换。</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="figure\45.png" style="zoom:80%;" /></td>
+</tr>
+<tr>
+<td>这样做清楚地表明：代码的作者知道这里涉及了不同的变量类型，他是有意为之。</td>
+</tr>
+</tbody>
+</table></div>
+<div class="section" id="id3">
+<h2>5.2 变量<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>46. 【should】应该在声明变量的位置同时对其初始化。</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>无</td>
+</tr>
+<tr>
+<td>这样做保证了变量始终是有效的。有时侯可能会像下面这样初始化声明的变量：<br><img src="figure\46.png" style="zoom:80%;" /><br>这种情况下，与其将其初始化为“假的”值，不如不初始化。</td>
+</tr>
+</tbody>
+</table><table border="1" class="docutils">
+<thead>
+<tr>
+<th>47. 【must】变量的名称永远不允许有双重含义。</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>无</td>
+</tr>
+<tr>
+<td>保证所有<u>concept</u>被唯一地表示。减少由<u>side effect</u>产生的错误。</td>
+</tr>
+</tbody>
+</table><table border="1" class="docutils">
+<thead>
+<tr>
+<th>48. 【should】应该尽可能避免使用全局变量。</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>无</td>
+</tr>
+<tr>
+<td>在C++中完全没有理由使用全局变量。<u>global function</u>和静态变量也一样。</td>
+</tr>
+</tbody>
+</table><table border="1" class="docutils">
+<thead>
+<tr>
+<th>49. 【should】类成员变量永远不应该被声明为public。</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>无</td>
+</tr>
+<tr>
+<td>公有变量破坏了C++隐藏、封装信息的理念。应该用私有变量+成员函数来代替公有变量。一个例外是：如果某个类在本质上是一个数据结构（相当于C语言的结构体），最好令其成员变量都是公有的。<br>注意C++中的结构体只是为了和C语言兼容，避免使用结构体能够减少所使用的<u>construct</u>，提升代码可读性。请用类代替结构体。</td>
+</tr>
+</tbody>
+</table><table border="1" class="docutils">
+<thead>
+<tr>
+<th>51. 【should】C++指针和引用的操作符应该紧挨着变量类型而不是变量名。</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="figure\51.png" style="zoom:80%;" /></td>
+</tr>
+<tr>
+<td>变量的指针和引用是针对类型的属性，而非变量名的属性。C程序员通常采用前一种写法，但在C++中，后一种写法越来越常见。</td>
+</tr>
+</tbody>
+</table><table border="1" class="docutils">
+<thead>
+<tr>
+<th>53. 【should】除了布尔变量和指针之外，不应该使用隐含的方式测试其是否为0。</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="figure\53.png" style="zoom:80%;" /></td>
+</tr>
+<tr>
+<td>C++标准并没有规定整数0和浮点数0.0必须由二进制的0来实现。此外，显式的测试还能清楚地表明测试对象的类型。</td>
+</tr>
+</tbody>
+</table><table border="1" class="docutils">
+<thead>
+<tr>
+<th>54. 【should】变量的作用域应该越小越好。</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>无</td>
+</tr>
+<tr>
+<td>把对变量的操作限制在更小的作用域内，容易控制变量所造成的（希望出现和不希望出现）的影响。</td>
+</tr>
+</tbody>
+</table></div>
+<div class="section" id="id4">
+<h2>5.3 循环<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>55. 【must】for循环体中只能包含与循环控制有关的语句。</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="figure\55.png" style="zoom:80%;" /></td>
+</tr>
+<tr>
+<td>提高维护性和可读性。将控制循环的语句和循环中的内容明确地区分开来。</td>
+</tr>
+</tbody>
+</table><table border="1" class="docutils">
+<thead>
+<tr>
+<th>56. 【should】循环变量应该在紧靠循环体的位置初始化。</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="figure\56.png" style="zoom:80%;" /></td>
+</tr>
+<tr>
+<td>无</td>
+</tr>
+</tbody>
+</table><table border="1" class="docutils">
+<thead>
+<tr>
+<th>57. 【can】可以避免使用do-while循环。</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>无</td>
+</tr>
+<tr>
+<td>do-while循环的可读性不如while循环和for循环，因为循环条件在循环体的下方。为了知道循环的范围，读者必须浏览整个循环体。<br>另外，没有必要使用do-while循环。任何do-while循环都很容易改写成while循环和for循环。减少construct的数量有助于提升可读性。</td>
+</tr>
+</tbody>
+</table><table border="1" class="docutils">
+<thead>
+<tr>
+<th>58. 【should】应该避免在循环中使用<code>continue</code>和<code>break</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>无</td>
+</tr>
+<tr>
+<td>仅当二者的可读性要比他们的<u>structured counterparts</u>更好时才使用它们。</td>
+</tr>
+</tbody>
+</table><table border="1" class="docutils">
+<thead>
+<tr>
+<th>60. 【should】对于死循环应该用 <code>while(true)</code> 。</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="figure\60.png" style="zoom:85%;" /></td>
+</tr>
+<tr>
+<td>测试是否为1既无必要也无意义。<code>for (;;)</code>的可读性不太好，也不能明确表示是一个死循环。</td>
+</tr>
+</tbody>
+</table></div>
+<div class="section" id="id5">
+<h2>5.4 条件表达式<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>61. 【should】避免使用复杂的条件表达式，推荐使用临时的布尔变量[1]。</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="figure\61.png" style="zoom:80%;" /></td>
+</tr>
+<tr>
+<td>通过将布尔变量传入表达式，程序变得像文档一样清晰。这样的代码结构容易阅读、调试和维护。</td>
+</tr>
+</tbody>
+</table><table border="1" class="docutils">
+<thead>
+<tr>
+<th>62. 【should】使用if-else语句时，正常执行的语句应该放在<code>if</code>分支中，处理异常的语句放在<code>else</code>分支[1]。</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="figure\62.png" style="zoom:80%;" /></td>
+</tr>
+<tr>
+<td>保证异常处理部分的代码不会模糊代码正常的执行顺序。这一点对于程序的可读性和性能都很重要。</td>
+</tr>
+</tbody>
+</table><table border="1" class="docutils">
+<thead>
+<tr>
+<th>63. 【should】条件表达式必须独占一行。</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="figure\63.png" style="zoom:80%;" /></td>
+</tr>
+<tr>
+<td>这一点为了调试着想。如果把二者写在同一行，将很难判断条件表达式的运行结果是<code>true</code>还是<code>false</code>。</td>
+</tr>
+</tbody>
+</table><table border="1" class="docutils">
+<thead>
+<tr>
+<th>64. 【must】条件表达式中不能有可执行语句。</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="figure\64.png" style="zoom:80%;" /></td>
+</tr>
+<tr>
+<td>带有可执行语句的条件表达式的可读性很差。尤其是对于C/C++的新手。</td>
+</tr>
+</tbody>
+</table></div>
+<div class="section" id="id6">
+<h2>5.5 其他<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>65. 【should】应该避免使用“魔法数字”。对于0和1之外的数字都应该考虑将其声明为常量。</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>无</td>
+</tr>
+<tr>
+<td>如果一个数字本身含义不明，将其定义为常量可以提升可读性。另一种可行的方法是定义一个返回该数字的函数。</td>
+</tr>
+</tbody>
+</table><p>[^魔法数字]: magic number，像魔法般突然出现、意义不明的数字。</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>66.【should】浮点数应该始终有小数点并且至少有一位小数。</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="figure\66.png" style="zoom:80%;" /></td>
+</tr>
+<tr>
+<td>这种写法强调了浮点数与整数的不同。在数学中，二者是完全不同的概念。</td>
+</tr>
+</tbody>
+</table><table border="1" class="docutils">
+<thead>
+<tr>
+<th>67. 【should】浮点数常量的小数点之前应该总是有数字。</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="figure\67.png" style="zoom:80%;" /></td>
+</tr>
+<tr>
+<td>C++中的数字和表达式体系借鉴自数学，我们应该始终遵守数学中的惯例。另外，<code>0.5</code>的可读性要比<code>.5</code>好得多，完全不会和<code>5</code>混淆。</td>
+</tr>
+</tbody>
+</table><table border="1" class="docutils">
+<thead>
+<tr>
+<th>68. 【must】必须始终指定函数返回值的类型。</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="figure\68.png" style="zoom:85%;" /></td>
+</tr>
+<tr>
+<td>如果没有显式指定，C++会自动推断返回值的类型为int。程序员永远都不能依赖这种特性，</td>
+</tr>
+</tbody>
+</table><table border="1" class="docutils">
+<thead>
+<tr>
+<th>69. 【should】不应该使用<code>goto</code> 。</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>无</td>
+</tr>
+<tr>
+<td><code>goto</code>违背了代码结构化的初衷。只有在极少数情况下（例如从多层嵌套的循环中跳出），且仅当用于代替<code>goto</code>的写法可读性更差时，才应该考虑使用<code>goto</code>语句。</td>
+</tr>
+</tbody>
+</table><table border="1" class="docutils">
+<thead>
+<tr>
+<th>70. 【should】应该用 0 替换<code>NULL</code>。</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>无</td>
+</tr>
+<tr>
+<td><code>NULL</code> 是标准C语言库的内容，但在C++中已经不再使用。</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="6_layout_comments.html" class="btn btn-neutral float-right" title="6 布局和注释" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="4_files.html" class="btn btn-neutral float-left" title="4 文件" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Guoning-Chen.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
