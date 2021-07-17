@@ -197,7 +197,7 @@ Github仓库：[https://github.com/Guoning-Chen/Cpp-Programming-Style-Guideline]
 
 | 21. 【should】代表GUI控件的变量应该用组件类型作为后缀。      |
 | :----------------------------------------------------------- |
-| `mianWindow`，`porpertiesDialog`，`widthScale`，`loginText`，`leftScrollbar`，`mainForm`，`fileMenu`，`minLabel`，`exitButton`，`yesToggle`等等。 |
+| `mianWindow`，`porpertiesDialog`，`widthScale`，`loginText`，`leftScrollbar`，<br>`mainForm`，`fileMenu`，`minLabel`，`exitButton`，`yesToggle`等等。 |
 | 让用户立刻明白变量的类型和对象资源，从而提高代码可读性。     |
 
 | 22. 【should】代表一组对象的变量名应该用复数。               |
@@ -207,13 +207,13 @@ Github仓库：[https://github.com/Guoning-Chen/Cpp-Programming-Style-Guideline]
 
 | 23. 【should】表示对象数量的变量应该使用前缀n。 |
 | :---------------------------------------------- |
-| `nPoints`，`NLines`                             |
+| `nPoints`，`nLines`                             |
 | 这种记号是数学中表示对象数量的已有惯例。        |
 
 | 24. 【should】代表对象编号的变量应该使用后缀No。             |
 | :----------------------------------------------------------- |
 | `tableNo`，`employeeNo`                                      |
-| 这种记号是数学中表示对象编号的惯例。 另一种优雅的命名是给变量加上前缀i，例如：`iTable`，`iEmployee`。这样这些变量就成了named iterator。 |
+| 这种记号是数学中表示对象编号的惯例。 另一种优雅的命名是给变量加上前缀i，例如：`iTable`，`iEmployee`。这样这些变量就成了<u>named iterator</u>。 |
 
 | 25. 【should】循环变量应该用i，j，k等命名。                  |
 | :----------------------------------------------------------- |
@@ -227,7 +227,7 @@ Github仓库：[https://github.com/Guoning-Chen/Cpp-Programming-Style-Guideline]
 
 | 27. 【must】成对的操作必须用成对的名称。                     |
 | :----------------------------------------------------------- |
-| `get/set`，`add/remove`，`create/destory`，`start/stop`，`insert/delete`，`increment/decrement`，`old/new`，`begin/end`，`first/last`，`up/down`，`min/max`，`next/previous`，`old/new`，`open/close`，`show/hide`，`suspend/resume`，等等。 |
+| `get/set`，`add/remove`，`create/destory`，`start/stop`，`insert/delete`，<br>`increment/decrement`，`old/new`，`begin/end`，`first/last`，`up/down`，<br>`min/max`，`next/previous`，`old/new`，`open/close`，`show/hide`，`suspend/resume`，等等。 |
 | 通过对称降低代码复杂度。                                     |
 
 | 28. 【should】命名时应该尽量避免用缩写。                     |
