@@ -9,5 +9,5 @@
   * [5 声明](zheng-wen/5-sheng-ming.md)
   * [6 布局和注释](zheng-wen/6-bu-ju-he-zhu-shi.md)
   * [7 参考资料](zheng-wen/7-can-kao-zi-liao.md)
+* [译者附录](yi-zhe-fu-lu.md)
 
-- [译者附录](yi-zhe-fu-lu.md)
