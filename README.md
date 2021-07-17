@@ -1,5 +1,18 @@
 # 一份适合C++初学者的C++编程风格指南
 
+# 如何使用
+
+**在线阅读**
+
+- GitBook链接：https://chengn.gitbook.io/programing-style-for-beginner/
+- 图片加载比较慢，翻墙会好很多。
+
+**离线阅读**
+
+- Chinese.pdf：PDF格式的完整译文。
+
+- Chines.md：Markdown格式的完整译文，推荐使用[Typora](https://www.typora.io/)打开。
+
 # 内容简介
 
 众所周知，对于一名合格的程序员而言，保持良好的代码风格非常重要。好的代码风格能够让别人（也不只是别人，还可能是写完代码N天之后的自己）快速地掌握一段代码的逻辑结构，从而高效地进行维护，这对于团队协作开发一个大型项目是非常有利的。另外，良好的代码风格甚至还能够从源头上避免自己无意间造成的一些bug。
@@ -23,32 +36,31 @@
 
    相信会有很多人像我一样，因为畏惧Google编程规范之类文档的过于庞杂而不知道从何处开始，这份指南同样适合你们。万事开头难，你完全可以把阅读这份指南当做一个相对轻松的开头，等到培养一定的习惯之后再考虑学习那些更加复杂、也更加完善的编程指南。
 
-# 项目文件说明
+## 注意事项
 
-- **Chinese.pdf**
+1. 由于水平有限，文中部分名词和句子翻译的似乎不太通顺，但未找到更好的译法，已在文中用<u>下划线</u>标出；
+2. 部分单词未找到合适的译法，在文中**保留了英文**，同样用<u>下划线</u>标出；
+3. 部分标记了<u>下划线</u>的英文单词在原文中出现多次，我推测可能是术语，在**译者附录**中给出了我自己的理解；
+4. 如果你发现翻译内容有误或对<u>下划线</u>部分有新的见解，欢迎在[issue](https://github.com/Guoning-Chen/Cpp-Programming-Style-Guideline/issues)中指出或通过[邮箱](cgn1874@163.com)联系我，同样欢迎任何其他的意见。
 
-  翻译好的中文版，通过Chinese.md导出的pdf版本。
+# 相关信息
 
-- **Chinese.md**（推荐）
+英文名：C++ Programming Style Guidelines
 
-  翻译好的中文版，Markdown格式。
+中文名：C++编程风格指南
 
-- **figure**
+原作者：*Geotechnical Software Services*
 
-  文件夹，包含Chinese.md中用到的所有图片。注意：因为是通过相对路径的方式插入图片，**为了保证Chinese.md中的图片能够正确显示，需要把Chinese.md和figure文件夹放在同一路径下**。
+版本：4.9
 
-- **English.pdf（推荐）**
+时间：2011年1月
 
-  英文原文，PDF格式。
+英文原文：http://geosoft.no/development/cppstyle.html
 
-- **English.md**
+译者：[Guoning-Chen](https://github.com/Guoning-Chen)
 
-  英文原文，Markdown格式。
+译者邮箱：cgn1874@163.com
 
-- **README.md**
+翻译版本：v1.0
 
-  本文档
-  
-- **LICENSE**
-
-  项目许可证
+Github仓库：https://github.com/Guoning-Chen/Cpp-Programming-Style-Guideline
