@@ -1,5 +1,5 @@
 ---
-description: 和Google编程规范相比，它适合C++初学者。
+description: 和Google编程规范相比，它更适合C++初学者。
 ---
 
 # 一份短小精悍的C++编程风格指南
