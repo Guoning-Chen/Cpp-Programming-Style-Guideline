@@ -1,23 +1,24 @@
-# 一份适合C++初学者的C++编程风格指南
+# README
 
-# 如何使用
+## 一份适合C++初学者的C++编程风格指南
+
+## 如何使用
 
 **在线阅读**
 
-- GitBook链接：https://chengn.gitbook.io/programing-style-for-beginner/
-- 图片加载比较慢，翻墙会好很多。
+* GitBook链接：[https://chengn.gitbook.io/programing-style-for-beginner/](https://chengn.gitbook.io/programing-style-for-beginner/)
+* 图片加载比较慢，翻墙会好很多。
 
 **离线阅读**
 
-- Chinese.pdf：PDF格式的完整译文。
+* Chinese.pdf：PDF格式的完整译文。
+* Chines.md：Markdown格式的完整译文，推荐使用[Typora](https://www.typora.io/)打开。
 
-- Chines.md：Markdown格式的完整译文，推荐使用[Typora](https://www.typora.io/)打开。
-
-# 内容简介
+## 内容简介
 
 众所周知，对于一名合格的程序员而言，保持良好的代码风格非常重要。好的代码风格能够让别人（也不只是别人，还可能是写完代码N天之后的自己）快速地掌握一段代码的逻辑结构，从而高效地进行维护，这对于团队协作开发一个大型项目是非常有利的。另外，良好的代码风格甚至还能够从源头上避免自己无意间造成的一些bug。
 
-关于代码风格的书或在线文档有很多，已经出版的书籍有《重构-改善既有代码的设计》、《代码整洁之道》等等；很多大公司也有完善的编程规范，例如：[Google 开源项目风格指南 (中文版)](https://zh-google-styleguide.readthedocs.io/en/latest/)。虽然这些资料的内容都很详细、很权威，但缺点就是——**太长**（Google编程规范中文版就长达5万字），不太适合**C++初学者**。
+关于代码风格的书或在线文档有很多，已经出版的书籍有《重构-改善既有代码的设计》、《代码整洁之道》等等；很多大公司也有完善的编程规范，例如：[Google 开源项目风格指南 \(中文版\)](https://zh-google-styleguide.readthedocs.io/en/latest/)。虽然这些资料的内容都很详细、很权威，但缺点就是——**太长**（Google编程规范中文版就长达5万字），不太适合**C++初学者**。
 
 我接触到这份指南是在刚开始学习C++的时候，由MOOC公开课——[北京邮电大学《C++程序设计（面向对象进阶）》](https://www.icourse163.org/course/BUPT-1003564002?outVendor=zw_mooc_pclszykctj_)的老师推荐的。**之所以说这份指南适合初学者，主要有以下原因：**
 
@@ -36,26 +37,26 @@
 
    相信会有很多人像我一样，因为畏惧Google编程规范之类文档的过于庞杂而不知道从何处开始，这份指南同样适合你们。万事开头难，你完全可以把阅读这份指南当做一个相对轻松的开头，等到培养一定的习惯之后再考虑学习那些更加复杂、也更加完善的编程指南。
 
-## 注意事项
+### 注意事项
 
-1. 由于水平有限，文中部分名词和句子翻译的似乎不太通顺，但未找到更好的译法，已在文中用<u>下划线</u>标出；
-2. 部分单词未找到合适的译法，在文中**保留了英文**，同样用<u>下划线</u>标出；
-3. 部分标记了<u>下划线</u>的英文单词在原文中出现多次，我推测可能是术语，在**译者附录**中给出了我自己的理解；
-4. 如果你发现翻译内容有误或对<u>下划线</u>部分有新的见解，欢迎在[issue](https://github.com/Guoning-Chen/Cpp-Programming-Style-Guideline/issues)中指出或通过[邮箱](cgn1874@163.com)联系我，同样欢迎任何其他的意见。
+1. 由于水平有限，文中部分名词和句子翻译的似乎不太通顺，但未找到更好的译法，已在文中用下划线标出；
+2. 部分单词未找到合适的译法，在文中**保留了英文**，同样用下划线标出；
+3. 部分标记了下划线的英文单词在原文中出现多次，我推测可能是术语，在**译者附录**中给出了我自己的理解；
+4. 如果你发现翻译内容有误或对下划线部分有新的见解，欢迎在[issue](https://github.com/Guoning-Chen/Cpp-Programming-Style-Guideline/issues)中指出或通过[邮箱](https://github.com/Guoning-Chen/Cpp-Programming-Style-Guideline/tree/35b4125ba008b206b9d35ef4ef4f7fb66490f66d/cgn1874@163.com)联系我，同样欢迎任何其他的意见。
 
-# 相关信息
+## 相关信息
 
 英文名：C++ Programming Style Guidelines
 
 中文名：C++编程风格指南
 
-原作者：*Geotechnical Software Services*
+原作者：_Geotechnical Software Services_
 
 版本：4.9
 
 时间：2011年1月
 
-英文原文：http://geosoft.no/development/cppstyle.html
+英文原文：[http://geosoft.no/development/cppstyle.html](http://geosoft.no/development/cppstyle.html)
 
 译者：[Guoning-Chen](https://github.com/Guoning-Chen)
 
@@ -63,4 +64,5 @@
 
 翻译版本：v1.0
 
-Github仓库：https://github.com/Guoning-Chen/Cpp-Programming-Style-Guideline
+Github仓库：[https://github.com/Guoning-Chen/Cpp-Programming-Style-Guideline](https://github.com/Guoning-Chen/Cpp-Programming-Style-Guideline)
+
