@@ -1,4 +1,8 @@
-# 这是一份适合C++初学者的C++编程风格指南
+---
+description: 和Google编程规范相比，它适合C++初学者。
+---
+
+# 一份短小精悍的C++编程风格指南
 
 英文名：C++ Programming Style Guidelines
 
