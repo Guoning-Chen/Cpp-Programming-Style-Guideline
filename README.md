@@ -1,17 +1,16 @@
-## 一份适合C++初学者的C++编程风格指南
+# 一份适合C++初学者的C++编程风格指南
 
 ## 如何使用
 
-**在线阅读**（推荐）
+**在线阅读**
 
 * 网址：https://cpp-programming-style-guideline.readthedocs.io/zh_CN/latest/index.html
 
-**离线阅读**（见`v1.0`文件夹）：
+**离线阅读**（见`v1.0`文件夹）
 
-- 文件夹`Chiese-Code`和文件夹`Chiese-Figure`下都是翻译好的中文版，二者的区别在于文档中涉及到的代码的格式，前者是通过
-- 文件夹`Chiese-Code`：样例是图片形式，其中Markdown版本（.md文件）使用时请务必和figure文件夹放在同一路径下。
-
-* Eng.md：Markdown格式的完整译文，推荐使用[Typora](https://www.typora.io/)打开。
+- chinese.pdf：中文的pdf格式。
+- Chinese.md：中文的Markdown格式，推荐使用[Typora](https://www.typora.io/)打开。
+- English.pdf：英文原版，通过保存[原文网页](http://geosoft.no/development/cppstyle.html)得到。
 
 ## 内容简介
 
