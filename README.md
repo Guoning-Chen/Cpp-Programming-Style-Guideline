@@ -2,15 +2,16 @@
 
 ## 如何使用
 
-**在线阅读**
+**在线阅读**（推荐）
 
-* GitBook链接：[https://chengn.gitbook.io/programing-style-for-beginner/](https://chengn.gitbook.io/programing-style-for-beginner/)
-* 图片加载比较慢，翻墙会好很多。
+* 网址：https://cpp-programming-style-guideline.readthedocs.io/zh_CN/latest/index.html
 
-**离线阅读（推荐）**
+**离线阅读**（见`v1.0`文件夹）：
 
-* Chinese.pdf：PDF格式的完整译文。
-* Chines.md：Markdown格式的完整译文，推荐使用[Typora](https://www.typora.io/)打开。
+- 文件夹`Chiese-Code`和文件夹`Chiese-Figure`下都是翻译好的中文版，二者的区别在于文档中涉及到的代码的格式，前者是通过
+- 文件夹`Chiese-Code`：样例是图片形式，其中Markdown版本（.md文件）使用时请务必和figure文件夹放在同一路径下。
+
+* Eng.md：Markdown格式的完整译文，推荐使用[Typora](https://www.typora.io/)打开。
 
 ## 内容简介
 
