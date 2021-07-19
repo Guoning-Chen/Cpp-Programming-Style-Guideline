@@ -533,7 +533,7 @@ Github仓库：[https://github.com/Guoning-Chen/Cpp-Programming-Style-Guideline]
 
 | 86. 【should】同一个代码块中的逻辑单元应该用空行分隔开。     |
 | :----------------------------------------------------------- |
-| `Matrix4x4 matrix = new Matrix4x4();`<br><br>`double cosAngle = Math.cos(angle);`<br>`double sinAngle = Math.sin(angle);`<br/><br>`matrixl.setElement(1, 1,  cosAngle);`<br>`matrixl.setElement(1, 2,  sinAngle);`<br/>`matrixl.setElement(2, 1, -sinAngle);`<br/>`matrixl.setElement(2, 2,  cosAngle);`<br/><br>`multiply(matrix);` |
+| `Matrix4x4 matrix = new Matrix4x4();`<br><br>`double cosAngle = Math.cos(angle);`<br>`double sinAngle = Math.sin(angle);`<br/><br>`matrixl.setElement(1, 1,··cosAngle);`<br>`matrixl.setElement(1, 2,··sinAngle);`<br/>`matrixl.setElement(2, 1, -sinAngle);`<br/>`matrixl.setElement(2, 2, ·cosAngle);`<br/><br>`multiply(matrix);` |
 | 通过在逻辑单元间插入空行来提高可读性。                       |
 
 | 87. 【should】类的成员函数应该用3行空行分隔。                |
@@ -543,12 +543,12 @@ Github仓库：[https://github.com/Guoning-Chen/Cpp-Programming-Style-Guideline]
 
 | 88. 【can】声明时的变量可以左对齐。                          |
 | :----------------------------------------------------------- |
-| `AsciiFile* file;`<br>`int        nPoints;`<br>`float      x, y;` |
+| `AsciiFile* file;`<br>`int········nPoints;`<br>`float······x, y;` |
 | 提高可读性。通过对齐容易区分类型名称和变量名称。             |
 
 | 89. 【can】任何能够提高可读性的对齐都可以使用。              |
 | :----------------------------------------------------------- |
-| `if      (a == lowValue)  computeSomething(); `<br>`else if  (a == mediumValue) computeSomething(); `<br/>`else if  (a == highValue) computeSomethingElseYet(); `<br/><br>`value = (potential        * oilDensity)   / constant1 +`<br>`········(depth            * waterDensity) / constant2 +`<br/>`········(zCoordinateValue * gasDensity)   / constant3;`<br/><br>`minPosition     = computeDistance(min,     x, y, z);`<br>`averagePosition = computeDistance(average, x, y, z);`<br/><br>`switch (value) {` <br>`··case PHASE_OIL   : strcpy(phase, "Oil");   break;`<br>`··case PHASE_WATER : strcpy(phase, "Water"); break;`<br/>`··case PHASE_GAS   : strcpy(phase, "Gas");   break;`<br/>`}` |
+| `if····· (a == lowValue)··· computeSomething(); `<br>`else if (a == mediumValue) computeSomething(); `<br/>`else if (a == highValue)·· computeSomethingElseYet(); `<br/><br>`value = (potential······· * oilDensity)···/ constant1 +`<br>`········(depth··········· * waterDensity) / constant2 +`<br/>`········(zCoordinateValue * gasDensity)···/ constant3;`<br/><br>`minPosition···· = computeDistance(min,·····x, y, z);`<br>`averagePosition = computeDistance(average, x, y, z);`<br/><br>`switch (value) {` <br>`··case PHASE_OIL···: strcpy(phase, "Oil");···break;`<br>`··case PHASE_WATER : strcpy(phase, "Water"); break;`<br/>`··case PHASE_GAS···: strcpy(phase, "Gas");···break;`<br/>`}` |
 | 代码中有很多位置都可以利用空格提高可读性，即使违反了上述的某些建议。其中许多情形都需要使用对齐。虽然很难给出关于代码对齐的通用建议，但上面的这些例子提供了通用的思路。 |
 
 ## 6.3 注释
